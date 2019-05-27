@@ -19,6 +19,7 @@ import com.nepxion.aquarius.lock.constant.LockConstant;
 
 @Configuration
 public class LockAopConfiguration {
+    //在yml中配置了扫描lock的路径  用于扫描lock
     @Value("${" + LockConstant.LOCK_SCAN_PACKAGES + ":}")
     private String scanPackages;
 
